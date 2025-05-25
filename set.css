@@ -27,6 +27,27 @@ input{
     align-items: center;
 }
 
+.password-container {
+  position: relative;
+  width: 98%;
+  margin: 10px auto;
+}
+
+.password-container input {
+  width: 77%;
+  padding-right: 60px;
+}
+
+#togglePassword {
+  position: absolute;
+  right: 10px;
+  top: 35%;
+  cursor: pointer;
+  font-size: 12px;
+  color: #333;
+  user-select: none;
+}
+
 h2{
     text-align: center;
 }
