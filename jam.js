@@ -14,3 +14,14 @@ const registerBtn = document.getElementById("registerBtn");
       password.value = "";
     }
   };
+
+document.getElementById("togglePassword").onclick = function () {
+  const p = document.getElementById("password");
+  if (p.type === "password") {
+    p.type = "text";
+    this.textContent = "Hide";
+  } else {
+    p.type = "password";
+    this.textContent = "Show";
+  }
+};
