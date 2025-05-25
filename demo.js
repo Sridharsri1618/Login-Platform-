@@ -13,3 +13,14 @@ const form = document.getElementById("loginform");
       form.reset(); // clears all input fields
     }
   };
+
+document.getElementById("togglePassword").onclick = function () {
+  const pwd = document.getElementById("password");
+  if (pwd.type === "password") {
+    pwd.type = "text";
+    this.textContent = "Hide";
+  } else {
+    pwd.type = "password";
+    this.textContent = "Show";
+  }
+};
